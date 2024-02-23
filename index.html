@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Topics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const toggle = document.getElementById('darkmode');
+            toggle.addEventListener('change', function() {
+                if (this.checked) {
+                    document.body.classList.add('dark-mode');
+                } else {
+                    document.body.classList.remove('dark-mode');
+                }
+            });
+        });
+        
+        </script>
+        
+<header>
+    <section class="header-container">
+        <a id="title-name">Web Topics</a>
+        <nav>
+            <ul>
+                <li>
+                    <input type="checkbox" id="darkmode" name="darkmode">
+                    <label for="darkmode" class="label-toggle"><i class="far fa-moon"></i><a> Dark Mode</a></label>
+                </li>
+
+                <li>
+                  <input type="checkbox" id="favorites" name="favorites" hidden>
+                  <label for="favorites" class="toggle-button"><i class="far fa-heart"></i><a> Favorites</a></label>
+                  <div class="favorites-display">
+                    <p>My Favorite Topics</p>
+                    <div class="favorites">
+                      <div class="fav-item">
+                        <div class="card-fav">
+                          <img src="images/css.webp" alt="Course Image" class="card-image-fav">
+                          <div class="card-body-fav">
+                             
+                            <p class="course-lang-fav">CSS</p>
+                            <div class="star-rating-fav">
+                              ★★★☆☆
+                            </div>
+                             
+                          </div>
+                        </div>
+                        <div class="card-fav">
+                          <img src="images/cloud.jpeg" alt="Course Image" class="card-image-fav">
+                          <div class="card-body-fav">
+                             
+                            <p class="course-lang-fav">Cloud</p>
+                            <div class="star-rating-fav">
+                              ★★★★★
+                            </div>
+                             
+                          </div>
+                        </div>
+                        <div class="card-fav">
+                          <img src="images/cloud.jpeg" alt="Course Image" class="card-image-fav">
+                          <div class="card-body-fav">
+                             
+                            <p class="course-lang-fav">Cloud Computing</p>
+                            <div class="star-rating-fav">
+                              ★★★★★
+                            </div>
+                             
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                    
+                  </div>
+                  
+              </li>
+                
+            </ul>
+        </nav>
+    </section>
+    <section class="header-clips">
+        <div class="polygon2"></div>
+        <div class="polygon"></div>
+    </section>
+  <section class="header-d-text">
+        <div>
+            <ul id="desc-list">
+                <li id="first-line">Welcome to our website!</li>
+                <li id="second-line">We have a new design that's fresh, modern, and easy to use.</li>
+            </ul>
+        </div>
+  </section>
+</header>
+
+    <main>
+      <section class="search-section">
+        <form class="search-form">
+          <div class="txt"> 
+              <input type="text" class="search-txt" placeholder="Search the website...">
+              <a class="search-btn" href="#">
+                  <i class="fas fa-search"></i> <!-- Using Font Awesome Icon -->
+              </a>
+          </div>
+  
+          <div class="sort">
+              <label for="choices-single-defaul" class="sort-label">Sort by:</label>
+              <select class="sort-by" data-trigger="" name="choices-single-defaul">
+                  <option placeholder="">Default</option>
+                  <option>2 </option>
+                  <option>3 </option>
+                  <option>4 </option>
+                </select>
+              </div>
+              
+          <div class="filter">
+              <label for="choices-single-defaul" class="filter-label">Filter by:</label>
+              <select class="filter-by" data-trigger="" name="choices-single-defaul">
+                  <option placeholder="">Default</option>
+                  <option>5 </option>
+                  <option>6 </option>
+                  <option>7 </option>
+                </select>
+          </div>        
+      </form>
+      </section>
+
+    <section class="result-num">
+      <h2 id="sresult-heading">"24" Web Topics Found</h2>
+    </section>
+    <section class="courses-cards">
+        <div class="card">
+            <div class="course-image">
+              <img src="images/html.png" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Web Development Languages</h2>
+              <p class="course-lang">HTML</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-image">
+            <img src="images/css.webp" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Web Development Languages</h2>
+              <p class="course-lang">CSS</p>
+              <div class="star-rating">
+                ★★★☆☆
+              </div>
+              <p class="author-name">Author: David Lee</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-image">
+            <img src="images/javascript.jpg" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Web Development Languages</h2>
+              <p class="course-lang">JavaScript</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: Emily Chen</p>
+            </div>
+          </div>
+          <div class="card" >
+            <div class="course-image">
+            <img src="images/jquery.png" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Frontend Frameworks and Libraries</h2>
+              <p class="course-lang">jQuery</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: Jessica Davis</p>
+            </div>
+          </div>
+          <div class="card" >
+            <div class="course-image">
+            <img src="images/angular.png" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Frontend Frameworks and Libraries</h2>
+              <p class="course-lang">Angular</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: Jessica Davis</p>
+            </div>
+          </div>
+ 
+
+        <div class="card">
+          <div class="course-image">
+            <img src="images/react.webp" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Frontend Frameworks and Libraries</h2>
+              <p class="course-lang">React</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: Daniel Brown</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-image">
+            <img src="images/vuejs.jpeg" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Frontend Frameworks and Libraries</h2>
+              <p class="course-lang">Vue.js</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: Ava Jones</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-image">
+            <img src="images/nodejs.webp" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Backend Frameworks and Libraries</h2>
+              <p class="course-lang">Node.js</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: Michael Kim</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="course-image">
+            <img src="images/expressjs.webp" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Backend Frameworks and Libraries</h2>
+              <p class="course-lang">Express.Js</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: Sophia Rodriguez</p>
+            </div>
+          </div>
+          <div class="card" >
+            <div class="course-image">
+            <img src="images/ruby.jpeg" alt="Course Image" class="card-image">
+            </div>
+            <div class="card-body">
+              <h2 class="course-name">Backend Frameworks and Libraries</h2>
+              <p class="course-lang">Ruby on Rails</p>
+              <div class="star-rating">
+                ★★★★☆
+              </div>
+              <p class="author-name">Author: William Lee</p>
+            </div>
+          </div>
+ 
+
+      <div class="card">
+        <div class="course-image">
+          <img src="images/django.jpeg" alt="Course Image" class="card-image">
+          </div>
+          <div class="card-body">
+            <h2 class="course-name">Backend Frameworks and Libraries</h2>
+            <p class="course-lang">Django</p>
+            <div class="star-rating">
+              ★★★★☆
+            </div>
+            <p class="author-name">Author: Olivia Martinez</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="course-image">
+          <img src="images/flask.webp" alt="Course Image" class="card-image">
+          </div>
+          <div class="card-body">
+            <h2 class="course-name">Backend Frameworks and Libraries</h2>
+            <p class="course-lang">Flask</p>
+            <div class="star-rating">
+              ★★★★☆
+            </div>
+            <p class="author-name">Author: Ethan Thompson</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="course-image">
+          <img src="images/sql.png" alt="Course Image" class="card-image">
+          </div>
+          <div class="card-body">
+            <h2 class="course-name">Databases and APIs</h2>
+            <p class="course-lang">SQL</p>
+            <div class="star-rating">
+              ★★★★☆
+            </div>
+            <p class="author-name">Author: Madison Davis</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="course-image">
+          <img src="images/nosql.png" alt="Course Image" class="card-image">
+          </div>
+          <div class="card-body">
+            <h2 class="course-name">Databases and APIs</h2>
+            <p class="course-lang">NoSQL</p>
+            <div class="star-rating">
+              ★★★★☆
+            </div>
+            <p class="author-name">Author: Isabella Wilson</p>
+          </div>
+        </div>
+        <div class="card" >
+          <div class="course-image">
+          <img src="images/restapi.jpeg" alt="Course Image" class="card-image">
+          </div>
+          <div class="card-body">
+            <h2 class="course-name">Databases and APIs</h2>
+            <p class="course-lang">REST APIs</p>
+            <div class="star-rating">
+              ★★★★☆
+            </div>
+            <p class="author-name">Author: Jacob Garda</p>
+          </div>
+        </div>
+ 
+
+    <div class="card">
+      <div class="course-image">
+        <img src="images/graphql.png" alt="Course Image" class="card-image">
+        </div>
+        <div class="card-body">
+          <h2 class="course-name">Databases and APIs</h2>
+          <p class="course-lang">GraphQL</p>
+          <div class="star-rating">
+            ★★★★☆
+          </div>
+          <p class="author-name">Author: Mia Brown</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="course-image">
+        <img src="images/json.png" alt="Course Image" class="card-image">
+        </div>
+        <div class="card-body">
+          <h2 class="course-name">Web Development Concepts</h2>
+          <p class="course-lang">JSON</p>
+          <div class="star-rating">
+            ★★★★☆
+          </div>
+          <p class="author-name">Author: Liam Hernandez</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="course-image">
+        <img src="images/oauth.png" alt="Course Image" class="card-image">
+        </div>
+        <div class="card-body">
+          <h2 class="course-name">Web Development Concepts</h2>
+          <p class="course-lang">OAuth</p>
+          <div class="star-rating">
+            ★★★★☆
+          </div>
+          <p class="author-name">Author: Evelyn Nguyen</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="course-image">
+        <img src="images/ajax.gif" alt="Course Image" class="card-image">
+        </div>
+        <div class="card-body">
+          <h2 class="course-name">Web Development Concepts</h2>
+          <p class="course-lang">AJAX</p>
+          <div class="star-rating">
+            ★★★★☆
+          </div>
+          <p class="author-name">Author: Avery Perez</p>
+        </div>
+      </div>
+      <div class="card" >
+        <div class="course-image">
+        <img src="images/websockets.png" alt="Course Image" class="card-image">
+        </div>
+        <div class="card-body">
+          <h2 class="course-name">Web Development Concepts</h2>
+          <p class="course-lang">Websockets</p>
+          <div class="star-rating">
+            ★★★★☆
+          </div>
+          <p class="author-name">Author: Victoria Kim</p>
+        </div>
+      </div>
+ 
+
+  <div class="card">
+    <div class="course-image">
+      <img src="images/responsive.gif" alt="Course Image" class="card-image">
+      </div>
+      <div class="card-body">
+        <h2 class="course-name">Web Development Concepts</h2>
+        <p class="course-lang">Responsive Design</p>
+        <div class="star-rating">
+          ★★★★☆
+        </div>
+        <p class="author-name">Author: Ryan Jones</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="course-image">
+      <img src="images/accessibility.png" alt="Course Image" class="card-image">
+      </div>
+      <div class="card-body">
+        <h2 class="course-name">Web Development Concepts</h2>
+        <p class="course-lang">Accessibility</p>
+        <div class="star-rating">
+          ★★★★☆
+        </div>
+        <p class="author-name">Author: Samantha Martin</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="course-image">
+      <img src="images/ux.jpeg" alt="Course Image" class="card-image">
+      </div>
+      <div class="card-body">
+        <h2 class="course-name">Web Development Concepts</h2>
+        <p class="course-lang">User Experience (UX)</p>
+        <div class="star-rating">
+          ★★★★☆
+        </div>
+        <p class="author-name">Author: Luka Davis</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="course-image">
+      <img src="images/ui.png" alt="Course Image" class="card-image">
+      </div>
+      <div class="card-body">
+        <h2 class="course-name">Web Development Concepts</h2>
+        <p class="course-lang">User Interface (UI)</p>
+        <div class="star-rating">
+          ★★★★☆
+        </div>
+        <p class="author-name">Author: Grace Wilson</p>
+      </div>
+    </div>
+    <div class="card" >
+      <div class="course-image">
+      <img src="images/design-systems.jpeg" alt="Course Image" class="card-image">
+      </div>
+      <div class="card-body">
+        <h2 class="course-name">Web Development Concepts</h2>
+        <p class="course-lang">Design Systems</p>
+        <div class="star-rating">
+          ★★★★☆
+        </div>
+        <p class="author-name">Author: Noah Martinez</p>
+      </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer role="contentinfo" aria-labelledby="footer-heading">
+        <section class="f-container">
+            
+            <p>Developed with<i class="fas fa-heart"></i>&copy; 2024</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

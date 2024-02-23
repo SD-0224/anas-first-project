@@ -1,0 +1,9 @@
+/* Initially hide the element */
+.hiddenContent {
+    display: none;
+}
+
+/* When the checkbox is checked, display the element */
+#toggleCheckbox:checked ~ .hiddenContent {
+    display: block;
+}

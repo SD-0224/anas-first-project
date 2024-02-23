@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Interface</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .search-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px; /* Adjust as needed */
+  }
+  .search-box input {
+    border: none;
+    width: 100%;
+  }
+  .search-box input:focus {
+    outline: none;
+  }
+  .dropdown {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="search-container">
+  <div class="search-box">
+    <input type="text" placeholder="Search the website...">
+  </div>
+  <div class="dropdown">
+    <label for="sort-by">Sort by:</label>
+    <select id="sort-by">
+      <option value="
