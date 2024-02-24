@@ -24,7 +24,7 @@
 
 body {
 
-  font-family: Poppins;
+  font-family: 'Nunito Sans', sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--bg_body);
@@ -200,6 +200,9 @@ body {
 
 }
 
+.details-section {
+  
+}
 #first-line {
 
   color: var(--brand-secondary);
@@ -1022,7 +1025,7 @@ h4 {
 #sresult-heading {
   width: 90vw;
   margin: auto;
-  margin-top: 11vh;
+ 
   margin-bottom: 1vh;
   color: var(--body-text);
 }
@@ -1034,16 +1037,14 @@ h4 {
 
 .card:hover {
   scale: 1;
-  transition: 0.2;
-  /* cursor: pointer; */
-  /* background: var(--lines-color); */
+  transition: 0s;
+  cursor: pointer;
+  background: var(--bg_default);
 }
 .card img {
- 
-  /* width: fit-content; */
+  width: 100%;
   object-fit: cover;
-  object-position: center;
-  background-color: #FFF;
+  height: fit-content !important;
 }
 
 .card-image {
@@ -1055,7 +1056,7 @@ h4 {
 }
 
 .search-section {
-  height: auto;
+  height: 130px;
   width: auto;
 }
 }
